@@ -3,16 +3,17 @@ package it.polito.tdp.formulaone.model;
 import java.time.LocalDate;
 
 public class Driver {
-	
-	private int driverId ;
-	private String driverRef ;
-	private int number ;
-	private String code ;
-	private String forename ;
-	private String surname ;
-	private LocalDate dob ; // date of birth
-	private String nationality ;
-	private String url ;
+
+	private int driverId;
+	private String driverRef;
+	private int number;
+	private String code;
+	private String forename;
+	private String surname;
+	private LocalDate dob; // date of birth
+	private String nationality;
+	private String url;
+
 	public Driver(int driverId, String driverRef, int number, String code, String forename, String surname,
 			LocalDate dob, String nationality, String url) {
 		super();
@@ -26,63 +27,86 @@ public class Driver {
 		this.nationality = nationality;
 		this.url = url;
 	}
+
+	public Driver() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getDriverId() {
 		return driverId;
 	}
+
 	public void setDriverId(int driverId) {
 		this.driverId = driverId;
 	}
+
 	public String getDriverRef() {
 		return driverRef;
 	}
+
 	public void setDriverRef(String driverRef) {
 		this.driverRef = driverRef;
 	}
+
 	public int getNumber() {
 		return number;
 	}
+
 	public void setNumber(int number) {
 		this.number = number;
 	}
+
 	public String getCode() {
 		return code;
 	}
+
 	public void setCode(String code) {
 		this.code = code;
 	}
+
 	public String getForename() {
 		return forename;
 	}
+
 	public void setForename(String forename) {
 		this.forename = forename;
 	}
+
 	public String getSurname() {
 		return surname;
 	}
+
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
+
 	public LocalDate getDob() {
 		return dob;
 	}
+
 	public void setDob(LocalDate dob) {
 		this.dob = dob;
 	}
+
 	public String getNationality() {
 		return nationality;
 	}
+
 	public void setNationality(String nationality) {
 		this.nationality = nationality;
 	}
+
 	public String getUrl() {
 		return url;
 	}
+
 	public void setUrl(String url) {
 		this.url = url;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return String.format("%s %s", this.forename, this.surname);
+	}
 
 }
-
